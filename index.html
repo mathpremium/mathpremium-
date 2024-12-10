@@ -3,15 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Web Page</title>
+    <title>Math Genius Academy</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome to My Web Page!</h1>
-        <p>This is a simple page created using HTML, CSS, and JavaScript.</p>
-        <button id="alertButton">Click Me</button>
+    <div class="mobile-notice" id="mobileNotice">
+        📱 For the best experience, please rotate your device to landscape mode.
+        <button class="notice-close" onclick="this.parentElement.style.display='none'">×</button>
     </div>
-    <script src="script.js"></script>
+    <nav class="navbar">
+        <div class="logo">Math Genius Academy</div>
+        <button class="hamburger" id="hamburgerMenu">&#9776;</button>
+        <div class="nav-links" id="navLinks">
+            <div class="dropdown">
+                <label for="videoLectures">Video Lectures</label>
+                <select id="videoLectures" class="dropdown-select">
+                    <option value="" disabled selected>Select Topic</option>
+                    <option value="algebra">Algebra</option>
+                    <option value="geometry">Geometry</option>
+                    <option value="arithmetic">Arithmetic</option>
+                    <option value="trigonometry">Trigonometry</option>
+                    <option value="calculus">Calculus</option>
+                    <option value="statistics">Statistics and Probability</option>
+                    <option value="linear-algebra">Linear Algebra</option>
+                    <option value="discrete-mathematics">Discrete Mathematics</option>
+                    <option value="number-theory">Number Theory</option>
+                    <option value="financial-mathematics">Financial Mathematics</option>
+                </select>
+            </div>
+            <div class="dropdown">
+                <label for="speedTest">Test Your Speed</label>
+                <select id="speedTest" class="dropdown-select">
+                    <option value="" disabled selected>Select Topic</option>
+                    <option value="algebra">Algebra</option>
+                    <option value="geometry">Geometry</option>
+                    <option value="arithmetic">Arithmetic</option>
+                    <option value="trigonometry">Trigonometry</option>
+                    <option value="calculus">Calculus</option>
+                    <option value="statistics">Statistics and Probability</option>
+                    <option value="linear-algebra">Linear Algebra</option>
+                    <option value="discrete-mathematics">Discrete Mathematics</option>
+                    <option value="number-theory">Number Theory</option>
+                    <option value="financial-mathematics">Financial Mathematics</option>
+                </select>
+            </div>
+            <div class="dropdown">
+                <label for="resources">Downloadable Resources</label>
+                <select id="resources" class="dropdown-select">
+                    <option value="" disabled selected>Select Topic</option>
+                    <option value="algebra">Algebra</option>
+                    <option value="geometry">Geometry</option>
+                    <option value="arithmetic">Arithmetic</option>
+                    <option value="trigonometry">Trigonometry</option>
+                    <option value="calculus">Calculus</option>
+                    <option value="statistics">Statistics and Probability</option>
+                    <option value="linear-algebra">Linear Algebra</option>
+                    <option value="discrete-mathematics">Discrete Mathematics</option>
+                    <option value="number-theory">Number Theory</option>
+                    <option value="financial-mathematics">Financial Mathematics</option>
+                </select>
+            </div>
+            <a href="https://mathpremiumquiz.github.io/Mathpremiumquiz/" target="_blank">Practice Questions</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Welcome to Math Genius Academy</h1>
+        <p>Your comprehensive online mathematics learning platform. Explore various mathematical disciplines with expert-curated content.</p>
+        
+        <div class="feature-grid">
+            <div class="feature-box">
+                <h2>Personalized Learning</h2>
+                <p>Tailored mathematical learning paths for students of all levels.</p>
+            </div>
+            <div class="feature-box">
+                <h2>Expert Tutors</h2>
+                <p>Learn from experienced mathematicians and educators.</p>
+            </div>
+            <div class="feature-box">
+                <h2>Interactive Content</h2>
+                <p>Engaging video lectures, quizzes, and downloadable resources.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Math Genius Academy. All Rights Reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
